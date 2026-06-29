@@ -1,0 +1,130 @@
+/* Vanilla, readable privacy policy — light page, high contrast, minimal chrome */
+
+.privacy-simple-page {
+  background: #ffffff;
+  color: #1a1a1f;
+  min-height: calc(100vh - 5rem);
+  padding: 6.5rem 1.25rem 4rem;
+}
+
+.privacy-simple {
+  max-width: 42rem;
+  margin: 0 auto;
+  font-family: var(--font-dm-sans), system-ui, -apple-system, sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.privacy-simple h1 {
+  font-family: var(--font-dm-sans), system-ui, sans-serif;
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #1a1a1f;
+  margin: 0 0 0.75rem;
+  letter-spacing: -0.02em;
+}
+
+.privacy-simple .privacy-updated {
+  font-size: 0.875rem;
+  color: #5c5c66;
+  margin: 0 0 1.5rem;
+}
+
+.privacy-simple .privacy-intro {
+  font-size: 1rem;
+  color: #33333a;
+  margin: 0 0 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e5e5ea;
+}
+
+.privacy-simple section {
+  margin-bottom: 2rem;
+}
+
+.privacy-simple h2 {
+  font-family: var(--font-dm-sans), system-ui, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #1a1a1f;
+  margin: 0 0 0.75rem;
+}
+
+.privacy-simple h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #33333a;
+  margin: 1.25rem 0 0.5rem;
+}
+
+.privacy-simple p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #33333a;
+  margin: 0 0 0.875rem;
+}
+
+.privacy-simple ul,
+.privacy-simple ol {
+  margin: 0 0 1rem;
+  padding-left: 1.5rem;
+}
+
+.privacy-simple li {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #33333a;
+  margin-bottom: 0.5rem;
+}
+
+.privacy-simple a {
+  color: #1a1a1f;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.privacy-simple a:hover {
+  color: #5b21b6;
+}
+
+.privacy-simple .privacy-contact {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e5e5ea;
+  font-size: 0.9375rem;
+  color: #5c5c66;
+}
+
+.privacy-simple .privacy-back {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  font-size: 0.875rem;
+  color: #5c5c66;
+  text-decoration: none;
+}
+
+.privacy-simple .privacy-back:hover {
+  color: #1a1a1f;
+  text-decoration: underline;
+}
+
+.footer-legal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 1.5rem;
+  align-items: center;
+}
+
+.footer-legal a {
+  font-size: 0.8125rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--muted);
+  transition: color 0.2s;
+}
+
+.footer-legal a:hover {
+  color: var(--purple);
+}
