@@ -7,18 +7,19 @@ import { BlogCard } from "@/components/BlogCard";
 import { blogArticles } from "@/content/blogs";
 import { siteConfig, siteUrl } from "@/content/seo";
 
-const blogsDescription =
-  "Insights on BranDigiOps Growth Intelligence Suite — revenue engine intelligence, marketing budget planning, and execution-ready marketing operations.";
+const PAGE_TITLE = "Blogs & Articles";
+const PAGE_DESCRIPTION =
+  "Practical thinking on AI-powered growth intelligence — revenue engine classification, smarter marketing budgets, and execution-ready campaign operations for Indian SMBs.";
 
 export const metadata: Metadata = {
-  title: "Blogs",
-  description: blogsDescription,
+  title: PAGE_TITLE,
+  description: PAGE_DESCRIPTION,
   alternates: { canonical: "/blogs" },
   openGraph: {
     type: "website",
     url: "/blogs",
-    title: `Blogs | ${siteConfig.name}`,
-    description: blogsDescription,
+    title: `${PAGE_TITLE} | ${siteConfig.name}`,
+    description: PAGE_DESCRIPTION,
   },
 };
 
@@ -28,7 +29,7 @@ export default function BlogsPage() {
     "@type": "Blog",
     name: `${siteConfig.name} Blogs`,
     url: `${siteUrl}/blogs`,
-    description: blogsDescription,
+    description: PAGE_DESCRIPTION,
     blogPost: blogArticles.map((a) => ({
       "@type": "BlogPosting",
       headline: a.title,
@@ -45,20 +46,34 @@ export default function BlogsPage() {
       />
       <HomeClientChrome />
       <Header />
-      <main className="blogs-page">
-        <h1 className="stitle">Blogs</h1>
-        <p className="blogs-page-lead">{blogsDescription}</p>
-        <div className="blist blogs-page-all">
-          {blogArticles.map((article) => (
-            <BlogCard key={article.slug} article={article} />
-          ))}
-        </div>
-        <p className="blogs-page-lead" style={{ marginTop: "3rem" }}>
-          <Link href="/#contact" style={{ color: "var(--purple)" }}>
-            Get in touch
-          </Link>{" "}
-          to see how these modules work for your business.
-        </p>
+      <main>
+
+        {/* Page hero */}
+        <section className="section page-hero">
+          <div className="section-label">Insights</div>
+          <h1 className="section-title">{PAGE_TITLE}</h1>
+          <p className="section-subtitle">{PAGE_DESCRIPTION}</p>
+        </section>
+
+        {/* Article list */}
+        <section className="section blogs-page-body">
+          <div className="blist">
+            {blogArticles.map((article) => (
+              <BlogCard key={article.slug} article={article} />
+            ))}
+          </div>
+
+          {/* Bottom CTA */}
+          <div className="blogs-page-cta">
+            <p className="blogs-page-cta-text">
+              See how these ideas apply to your business.
+            </p>
+            <Link href="/#contact" className="hbtn-primary">
+              Book a walkthrough
+            </Link>
+          </div>
+        </section>
+
       </main>
       <Footer />
     </>

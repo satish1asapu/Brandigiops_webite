@@ -115,31 +115,7 @@
 }
 
 .blog-article-back:hover {
-  color: var(--fg);
-}
-
-.blogs-section-head {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 1rem;
-  margin-bottom: 0.5rem;
-}
-
-.blogs-view-all {
-  font-size: 0.72rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--purple);
-  border: 1px solid rgba(124, 58, 237, 0.35);
-  padding: 0.55rem 1.1rem;
-  transition: background 0.2s, color 0.2s;
-}
-
-.blogs-view-all:hover {
-  background: var(--purple);
-  color: var(--fg);
+  color: var(--primary);
 }
 
 .blogs-page {

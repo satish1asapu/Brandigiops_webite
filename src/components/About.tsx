@@ -1,65 +1,27 @@
-import Image from "next/image";
 import { about } from "@/content/site";
-import { mediaAssets } from "@/content/media-assets";
+import { IconCompass, IconTelescope } from "./icons/SiteIcons";
 
 export function About() {
   return (
-    <section className="about" id="about">
-      <h2 className="stitle">{about.sectionTitle}</h2>
-      <div className="agrid">
-        <div className="acol">
-          <div className="ahead">
-            <div className="aplus">+</div>
-            <h4 className="aheading">
-              {about.mission.headingLines[0]}
-              <br />
-              {about.mission.headingLines[1]}
-            </h4>
+    <section className="section section-alt why-us" id="about">
+      <div className="section-header">
+        <div className="section-label">{about.sectionLabel}</div>
+        <h2 className="section-title">{about.sectionTitle}</h2>
+      </div>
+      <div className="wu-grid">
+        <div className="wcard reveal">
+          <div className="wcard-icon wcard-icon--mission" aria-hidden>
+            <IconCompass size={22} />
           </div>
-          <div className="abody">
-            <div className="atext">
-              <p>{about.mission.body}</p>
-              <div className="asq" />
-            </div>
-            <div className="aphoto">
-              <Image
-                src={mediaAssets.aboutMission.src}
-                alt={mediaAssets.aboutMission.alt}
-                title={mediaAssets.aboutMission.title}
-                width={mediaAssets.aboutMission.width}
-                height={mediaAssets.aboutMission.height}
-                sizes="140px"
-                loading="lazy"
-              />
-            </div>
-          </div>
+          <h3 className="wcard-title">{about.mission.heading}</h3>
+          <p className="wcard-desc">{about.mission.body}</p>
         </div>
-        <div className="acol">
-          <div className="ahead flip">
-            <h4 className="aheading">
-              {about.vision.headingLines[0]}
-              <br />
-              {about.vision.headingLines[1]}
-            </h4>
-            <div className="aplus">+</div>
+        <div className="wcard reveal">
+          <div className="wcard-icon wcard-icon--vision" aria-hidden>
+            <IconTelescope size={22} />
           </div>
-          <div className="abody">
-            <div className="aphoto">
-              <Image
-                src={mediaAssets.aboutVision.src}
-                alt={mediaAssets.aboutVision.alt}
-                title={mediaAssets.aboutVision.title}
-                width={mediaAssets.aboutVision.width}
-                height={mediaAssets.aboutVision.height}
-                sizes="140px"
-                loading="lazy"
-              />
-            </div>
-            <div className="atext">
-              <div className="asq out" />
-              <p>{about.vision.body}</p>
-            </div>
-          </div>
+          <h3 className="wcard-title">{about.vision.heading}</h3>
+          <p className="wcard-desc">{about.vision.body}</p>
         </div>
       </div>
     </section>

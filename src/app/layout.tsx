@@ -91,7 +91,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${fontBody.variable} ${fontDisplay.variable}`}
+      className={`${fontBody.variable} ${fontDisplay.variable} antialiased`}
     >
       <head>
         <script
@@ -101,7 +101,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body id="home" className={fontBody.className}>
+      <body id="home" className={fontBody.className} suppressHydrationWarning>
         {children}
       </body>
     </html>

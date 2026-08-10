@@ -4,11 +4,16 @@ import { BlogCard } from "./BlogCard";
 
 export function BlogsSection() {
   return (
-    <section className="blog" id="blogs">
+    <section className="blog section-alt" id="blogs">
       <div className="blogs-section-head">
-        <h2 className="stitle">Blogs</h2>
+        <div>
+          <div className="section-label">Insights</div>
+          <h2 className="section-title" style={{ margin: 0 }}>
+            Blogs &amp; Articles
+          </h2>
+        </div>
         <Link href="/blogs" className="blogs-view-all">
-          View all articles
+          View all articles →
         </Link>
       </div>
       <div className="blist">

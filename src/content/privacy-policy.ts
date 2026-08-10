@@ -3,9 +3,9 @@ import { siteUrl } from "./seo";
 export const privacyPolicyMeta = {
   title: "Privacy Policy and Data Protection",
   description:
-    "Learn how Brandigiops collects, uses, stores, and protects your personal information when you use our website and AI-powered digital marketing services.",
+    "Learn how BranDigiOps collects, uses, stores, and protects your personal information when you use our website and AI-powered digital marketing services.",
   effectiveDate: "May 1, 2026",
-  companyName: "Brandigiops",
+  companyName: "BranDigiOps",
   website: siteUrl,
   contactEmail: "tech@brandigiops.com",
   grievanceOfficer: {

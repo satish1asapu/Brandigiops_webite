@@ -1,45 +1,58 @@
 "use client";
 
+import Link from "next/link";
 import { servicesSection } from "@/content/site";
-import { ArrowOutIcon } from "./icons/ArrowOutIcon";
+import {
+  IconTarget,
+  IconEye,
+  IconSparkles,
+  IconRocket,
+  IconAnalytics,
+  IconSignal,
+} from "./icons/SiteIcons";
+
+const serviceIcons = [
+  IconTarget,
+  IconEye,
+  IconSparkles,
+  IconRocket,
+  IconAnalytics,
+  IconSignal,
+];
 
 export function Services() {
-  const toggleS = (row: HTMLDivElement) => {
-    const open = row.classList.contains("open");
-    document.querySelectorAll(".srow.open").forEach((r) => r.classList.remove("open"));
-    if (!open) row.classList.add("open");
-  };
-
   return (
-    <section className="services" id="services">
-      <h2 className="stitle">{servicesSection.title}</h2>
-      {servicesSection.items.map((s) => (
-        <div
-          key={s.num}
-          className="srow"
-          role="button"
-          tabIndex={0}
-          onClick={(e) => toggleS(e.currentTarget)}
-          onKeyDown={(e) => {
-            if (e.key === "Enter" || e.key === " ") {
-              e.preventDefault();
-              toggleS(e.currentTarget as HTMLDivElement);
-            }
-          }}
-        >
-          <div className="stop">
-            <div className="snum">{s.num}</div>
-            <div className="sname">{s.name}</div>
-            <span className="stag">{s.tag}</span>
-            <div className="sarrow">
-              <ArrowOutIcon />
+    <section className="section services" id="solutions">
+      <div className="section-header services-header">
+        <div className="section-label services-eyebrow">{servicesSection.sectionLabel}</div>
+        <h2 className="section-title">{servicesSection.title}</h2>
+        <p className="section-subtitle">{servicesSection.sectionSubtitle}</p>
+      </div>
+      <div className="sgrid">
+        {servicesSection.items.map((s, i) => {
+          const Icon = serviceIcons[i];
+          const isLeadConversion = s.num === "06";
+          return (
+            <div key={s.num} className={`scard reveal${isLeadConversion ? " scard--radar" : ""}`}>
+              <div className="scard-top">
+                <div className={`scard-icon scard-icon--${i + 1}`} aria-hidden>
+                  {Icon && <Icon size={22} />}
+                </div>
+                <span className="scard-tag">{s.tag}</span>
+              </div>
+              <div className="scard-num">{s.num}</div>
+              <h3 className="scard-title">{s.name}</h3>
+              <p className="scard-desc">{s.description}</p>
+              {isLeadConversion && (
+                <Link href="/growth-radar" className="scard-radar-cta">
+                  <IconSignal size={15} />
+                  Powered by GrowthRadar
+                </Link>
+              )}
             </div>
-          </div>
-          <div className="sdesc">
-            <p>{s.description}</p>
-          </div>
-        </div>
-      ))}
+          );
+        })}
+      </div>
     </section>
   );
 }

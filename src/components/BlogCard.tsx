@@ -9,6 +9,16 @@ type BlogCardProps = {
   article: BlogArticleMeta;
 };
 
+function PersonIcon() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2" />
+      <circle cx="12" cy="7" r="4" />
+    </svg>
+  );
+}
+
 export function BlogCard({ article }: BlogCardProps) {
   const thumb = blogCardThumbById[article.thumbId];
 
@@ -24,8 +34,9 @@ export function BlogCard({ article }: BlogCardProps) {
         <p className="bexcerpt">{article.excerpt}</p>
         <div className="bfoot">
           <span className="bavatar" aria-hidden>
-            👤
+            <PersonIcon />
           </span>
+          <span className="breadtime">{article.readTime}</span>
           <div className="barrow">
             <ArrowOutIcon />
           </div>

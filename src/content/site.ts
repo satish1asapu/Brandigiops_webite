@@ -18,104 +18,170 @@ export const siteImages = {
 
 export const navigation = [
   { href: "/#home", label: "Home" },
-  { href: "/#about", label: "About" },
-  { href: "/#services", label: "Services" },
+  { href: "/#solutions", label: "Solutions" },
+  { href: "/growth-radar", label: "GrowthRadar" },
   { href: "/blogs", label: "Blogs" },
+  { href: "/about", label: "Who We Are" },
   { href: "/#contact", label: "Contact" },
 ] as const;
 
 export const hero = {
-  wordLeft: "Growth",
-  wordRight: "Surge",
-  title: "AI-Powered Digital Marketing & Growth Operations",
+  badge: "Growth Intelligence Suite",
+  titleLine1: "AI-powered growth intelligence,",
+  titleLine2: "built for Indian businesses.",
+  titleAccent: "",
   description:
-    "We don't just aim for growth — we engineer it. AI-powered digital marketing that guarantees seamless lead conversion and maximum ROI.",
-  ctaLabel: "Our Services",
-  ctaHref: "#services",
-  taglineLines: ["Precision With", "Every Step."],
+    "Grow instantly. Sustain with branding consistency, digital presence, and humanized content — at scale and speed. BranDigiOps combines AI automation with human expertise to give Indian businesses a growth engine that never sleeps.",
+  ctaLabel: "Book a 20-minute walkthrough",
+  ctaHref: "#contact",
+  ctaSecondaryLabel: "See how it works",
+  ctaSecondaryHref: "#solutions",
   marqueeItems: [
     "AI-Driven Marketing",
     "Lead Conversion",
     "Performance Analytics",
-    "Content Studio",
+    "AI Content Studio",
     "Campaign Execution",
     "Ecosystem Watchdog",
   ],
 };
 
+export const stats = [
+  { value: "AI-First", label: "Strategy & Execution" },
+  { value: "Always On", label: "Growth Engine" },
+  { value: "One Layer", label: "Every Channel" },
+  { value: "Zero Guesswork", label: "Data-Driven Decisions" },
+  { value: "No Tool Juggling", label: "Optimised · Automated · Agentic" },
+] as const;
+
 export const about = {
-  sectionTitle: "Who We Are",
+  sectionLabel: "Who We Are",
+  sectionTitle: "The thinking, the purpose, the people.",
+  storyTitle: "Built on enterprise rigour. Driven by real growth.",
+  storySubtitle:
+    "25 years of mission-critical technology architecture — now applied to your growth stack.",
   mission: {
-    headingLines: ["Our", "Mission"],
+    heading: "Our Mission",
     body:
-      "We transform fragmented marketing into a unified, high-converting revenue ecosystem. Our AI-powered platform permanently bridges customer acquisition with flawless operational execution, engineering scalable backend infrastructures that effortlessly process data-driven traffic. We eradicate operational chaos — arming you with the intelligent automation to outright dominate your market.",
+      "Most SMBs don't run one marketing system — they run six disconnected ones: a designer here, an ad account there, a spreadsheet somewhere, and no single view of what's working. BranDigiOps brings strategy, content, campaigns, analytics, and lead capture into one intelligence layer that understands your revenue model and acts on it. Less tool-juggling, more compounding growth.",
   },
   vision: {
-    headingLines: ["Our", "Vision"],
+    heading: "Our Vision",
     body:
-      "Our vision is to engineer a future where digital growth is a mathematical certainty. We empower ambitious brands with a predictive, future-proof ecosystem that completely eliminates operational limitations. By permanently erasing the boundaries between high-intent traffic generation and flawless backend execution, we are setting the global standard for automated customer acquisition.",
+      "We want growth to feel less like guesswork and more like operations you can see and improve. A future where an SMB owner in Bengaluru has the same calibre of growth intelligence that enterprise teams pay lakhs for — priced and packaged for how Indian businesses actually run.",
   },
 };
 
 export const servicesSection = {
-  title: "Services",
+  sectionLabel: "One intelligence layer. Every growth lever.",
+  title: "SolutionStack",
+  sectionSubtitle:
+    "Six integrated solution pillars designed to cover every dimension of your digital growth.",
   items: [
     {
       num: "01",
+      icon: "🎯",
       name: "AI-Driven Marketing Plan",
       tag: "Strategy",
       description:
-        "Every successful campaign is anchored by our bespoke Marketing Plan, designed to safeguard your investment and accelerate expansion. We conduct rigorous budget analyses to strategically allocate resources for maximum return on investment. Our data-driven approach identifies high-converting channels and pinpoints your exact target audience.",
+        "Every engagement starts with a plan built around how your business earns, not a generic template. We analyse your budget, map the channels most likely to convert for your model, and define who to target and where — so spend goes where it pays back.",
     },
     {
       num: "02",
+      icon: "👁️",
       name: "AI-Powered Ecosystem Watchdog",
       tag: "Monitoring",
       description:
-        "We deploy an intelligent digital Watchdog across your platforms to keep your brand at the forefront of industry trends. This active monitoring system identifies lucrative keyword gaps for untapped market share and delivers real-time updates. It also acts as a frontline community management tool, generating strategic responses to ensure highly responsive audience engagement.",
+        "Always-on monitoring across your channels and category. It surfaces keyword and content gaps you can win, flags competitor moves, and helps you respond to your audience quickly — so you're reacting to the market in hours, not weeks.",
     },
     {
       num: "03",
-      name: "High-Converting AI Content Studio",
+      icon: "✏️",
+      name: "AI Content Studio",
       tag: "Content",
       description:
-        "To fuel your strategy with high-converting creatives, our Content Studio rapidly produces platform-native video ads, striking custom imagery, and compelling captions at scale. By streamlining production, your campaigns launch swiftly, messaging stays remarkably fresh, and creatives iterate instantly based on real-time performance data.",
+        "Platform-native video, imagery, and captions produced at the pace campaigns actually need. Because production is fast, your messaging stays fresh and your creative can be iterated against real performance instead of waiting on the next design cycle.",
     },
     {
       num: "04",
-      name: "Performance-Driven Campaign Execution",
+      icon: "🚀",
+      name: "Campaign Execution",
       tag: "Campaigns",
       description:
-        "We drive your growth strategy forward by ensuring your targeted campaigns launch faster and your brand messaging remains consistently fresh. By leveraging real-time performance data, we instantly iterate and optimize your campaign assets to maximize audience engagement and ROI. Our comprehensive execution encompasses highly effective template and contact campaigns, seamlessly integrated with proactive, strategic social media posting.",
+        "We launch and run campaigns across your channels, then use performance data to refine creative and targeting as they run. Includes template and outreach campaigns plus scheduled, strategic social posting — executed, not just advised.",
     },
     {
       num: "05",
-      name: "Strategic Performance Analytics",
+      icon: "📊",
+      name: "Performance Analytics",
       tag: "Analytics",
       description:
-        "We empower your brand with transparent, strategic performance analytics ensuring every initiative aligns with your bottom line. Our comprehensive dashboard delivers deep insights across Website, Google My Business, Social Media, and advanced AIPO tracking for AI-driven search engines. We also provide robust Competitor Analysis to keep you actively ahead of the market.",
+        "One dashboard across Website, Google Business Profile, social, and — increasingly important — AI-search visibility (AEO): whether ChatGPT, Perplexity, and Google's AI Overviews mention your business. Plus competitor tracking, so you know where you stand.",
     },
     {
       num: "06",
-      name: "Intelligent Lead Conversion Pipeline",
+      icon: "🔄",
+      name: "Lead Conversion Pipeline",
       tag: "Conversion",
       description:
-        "To fuel your sales funnel and drive sustainable revenue, we deliver highly targeted client leads tailored to your ideal customer profile. We specialize in generating impactful Social Media Leads and high-quality Legacy Leads for a comprehensive, multi-channel approach. By seamlessly guiding your audience from initial prospect to loyal customer, we help you maximize conversions and rapidly accelerate your business expansion.",
+        "Targeted leads matched to your ideal customer profile, drawn from social and other channels, then guided from first touch to customer with follow-up that doesn't drop the ball. Built for multi-channel, not a single source.",
     },
   ],
 };
 
+export const socialProof = {
+  sectionLabel: "Built with real businesses",
+  clients: [
+    { descriptor: "Bengaluru PEB construction firm" },
+    { descriptor: "Bengaluru Preschool group" },
+    { descriptor: "Bengaluru Electronics manufacturer" },
+    { descriptor: "Industrial building-materials company" },
+  ],
+  note: "Named logos and results added as clients approve — e.g. \"content engine live in 3 weeks\"",
+};
+
+export const founder = {
+  partLabel: "AI, Technology & Automation",
+  title: "BranDigiOps",
+  tagline: "Enterprise-grade AI and automation, built to run in production.",
+  body:
+    "BranDigiOps is the AI, technology, and automation core of the platform. Founded by Satish Asapu — 25-year enterprise architect at Credit Suisse, UBS, and Bank of America — it applies the discipline of mission-critical banking infrastructure to your growth stack. AI agents that plan, create, and execute. Automation that removes the manual bottleneck between intelligence and action. No hallucination risk, no hand-waving — the same rigour that kept financial systems at 99.99% availability.",
+  points: [
+    "AI agent orchestration using Anthropic Claude API — in production",
+    "25+ years enterprise architecture: Credit Suisse · UBS · BofA",
+    "TOGAF 9 certified — system-level rigour applied to growth",
+    "Deterministic guardrails: reliable, repeatable, accountable output",
+  ],
+  cta: "Satish Asapu on LinkedIn →",
+  linkedIn: "https://linkedin.com/in/satish-asapu-71b8475",
+};
+
+export const fuelForBrand = {
+  note:
+    "AI outputs at BranDigiOps are reviewed and validated through FuelForBrand, our marketing partner, ensuring human oversight at every delivery point.",
+  href: "https://fuelforbrand.com/about-us/",
+};
+
 export const footer = {
-  contactTitle: "Get In Touch",
+  contactTitle: "Let's see if we're a fit.",
   contactLead:
-    "Ready to elevate your brand's digital operations? Contact our team today.",
+    "Book a 20-minute walkthrough, or send us your website and we'll run a free AI-visibility (AEO) snapshot on it.",
   email: "tech@brandigiops.com",
-  copyright: "Brandigiops — © 2026. All Rights Reserved.",
+  /**
+   * Google Calendar Appointment Schedule embed URL.
+   * Paste the booking page URL from Google Calendar here.
+   * Format: https://calendar.google.com/calendar/appointments/schedules/SCHEDULE_ID
+   */
+  // bookingCalendarUrl: "https://calendar.app.google/GdvfCMFZbiRUVUgPA",
+  bookingCalendarUrl: "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2mK58tYoNzR4yZGX-nXxIlepUzsh1juVkTIlgF_QufvWt5euGyViQ5K6roF2PLsP8Oc9QrvRCs",
+  bookingHref: "mailto:tech@brandigiops.com",
+  whatsappHref: "https://wa.me/917993191616",
+  copyright: "BranDigiOps — © 2026. All Rights Reserved.",
   social: [
     { label: "X", href: "https://x.com/brandigiops" },
     { label: "LinkedIn", href: "https://www.linkedin.com/company/113122988" },
     { label: "Facebook", href: "https://www.facebook.com/BrandigiopsMarketing" },
     { label: "Instagram", href: "https://www.instagram.com/brandigiops.marketing" },
     { label: "YouTube", href: "https://www.youtube.com/@BranDigiOpsMarketing" },
-],
+  ],
 };

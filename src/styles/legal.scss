@@ -119,12 +119,10 @@
 
 .footer-legal a {
   font-size: 0.8125rem;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: var(--muted);
+  color: rgba(255,255,255,.5);
   transition: color 0.2s;
 }
 
 .footer-legal a:hover {
-  color: var(--purple);
+  color: #fff;
 }

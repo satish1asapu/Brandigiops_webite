@@ -1,18 +1,20 @@
-import { Bebas_Neue, DM_Sans } from "next/font/google";
+import { Plus_Jakarta_Sans, Space_Grotesk } from "next/font/google";
 
-export const fontBody = DM_Sans({
+/** Body copy — humanist geometric, warm yet technical, excellent legibility. */
+export const fontBody = Plus_Jakarta_Sans({
   subsets: ["latin"],
-  weight: ["300", "400", "500"],
+  weight: ["300", "400", "500", "600"],
   style: ["normal", "italic"],
   display: "swap",
-  variable: "--font-dm-sans",
+  variable: "--font-jakarta",
   preload: true,
 });
 
-export const fontDisplay = Bebas_Neue({
-  weight: "400",
+/** Display / headings — geometric grotesque, sharp AI-tech energy, wide weight range. */
+export const fontDisplay = Space_Grotesk({
   subsets: ["latin"],
+  weight: ["500", "600", "700"],
   display: "swap",
-  variable: "--font-bebas",
+  variable: "--font-space",
   preload: true,
 });
