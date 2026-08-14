@@ -3,20 +3,22 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { HomeClientChrome } from "@/components/HomeClientChrome";
 import { Founder } from "@/components/Founder";
+import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
 import { about, fuelForBrand } from "@/content/site";
 import { IconCompass, IconTelescope, IconShield } from "@/components/icons/SiteIcons";
+import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Who We Are — BranDigiOps",
+  title: "Who We Are — AI Marketing Team in Bengaluru",
   description:
-    "Learn who BranDigiOps is, what we stand for, and the enterprise technology background that makes our AI-powered growth intelligence platform credible and reliable.",
+    "Meet the BranDigiOps AI marketing team in Bengaluru — enterprise architects building growth intelligence for Indian SMBs.",
   alternates: { canonical: "/about" },
   openGraph: {
     type: "website",
     url: "/about",
-    title: "Who We Are — BranDigiOps",
+    title: "Who We Are — AI Marketing Team in Bengaluru | BranDigiOps",
     description:
-      "Learn who BranDigiOps is, what we stand for, and the enterprise technology background that makes our AI-powered growth intelligence platform credible and reliable.",
+      "Meet the BranDigiOps AI marketing team in Bengaluru — enterprise architects building growth intelligence for Indian SMBs.",
   },
 };
 
@@ -24,6 +26,12 @@ export default function AboutPage() {
   return (
     <>
       <HomeClientChrome />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Who We Are", path: "/about" },
+        ]}
+      />
       <Header />
       <main>
 
@@ -31,6 +39,7 @@ export default function AboutPage() {
         <section className="section page-hero">
           <div className="section-label">{about.sectionLabel}</div>
           <h1 className="section-title">{about.sectionTitle}</h1>
+          <h2 className="section-keyword">{about.keywordLine}</h2>
           <p className="section-subtitle">
             BranDigiOps exists to give Indian SMBs the same calibre of growth
             intelligence that enterprise teams pay lakhs for — priced for how
@@ -47,6 +56,7 @@ export default function AboutPage() {
                 <IconCompass size={22} />
               </div>
               <h2 className="wcard-title">{about.mission.heading}</h2>
+              <h3 className="wcard-subhead">Why Indian SMBs need one growth layer</h3>
               <p className="wcard-desc">{about.mission.body}</p>
             </div>
             <div className="wcard reveal">
@@ -54,6 +64,7 @@ export default function AboutPage() {
                 <IconTelescope size={22} />
               </div>
               <h2 className="wcard-title">{about.vision.heading}</h2>
+              <h3 className="wcard-subhead">Enterprise-grade intelligence, SMB pricing</h3>
               <p className="wcard-desc">{about.vision.body}</p>
             </div>
           </div>
@@ -68,6 +79,15 @@ export default function AboutPage() {
           </div>
 
           <Founder />
+
+          <p className="about-related">
+            See how{" "}
+            <Link href="/growth-radar">
+              GrowthRadar finds pre-tender leads for Indian businesses
+            </Link>{" "}
+            — or read our{" "}
+            <Link href="/blogs">growth marketing insights for India</Link>.
+          </p>
 
           {/* Human oversight note — subtle trust signal, not a feature */}
           <aside className="ffb-note">

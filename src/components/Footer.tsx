@@ -4,6 +4,8 @@ import { footer, navigation } from "@/content/site";
 import { mediaAssets } from "@/content/media-assets";
 import { ChevronUpIcon } from "./icons/ChevronUpIcon";
 import { BookingModal } from "./BookingModal";
+import { ContactForm } from "./ContactForm";
+import { TrackedLink } from "./TrackedLink";
 import { IconCalendar, IconMessageCircle, IconMail } from "./icons/SiteIcons";
 
 const socialIcon = {
@@ -29,10 +31,9 @@ const keys = ["x", "linkedin", "facebook", "instagram", "youtube"] as const;
 export function Footer() {
   return (
     <footer className="footer">
-      {/* Top grid: brand + nav + contact */}
       <div className="footer-top">
         <div className="footer-brand">
-          <Link href="/#home" className="footer-logo">
+          <Link href="/#home" className="footer-logo" aria-label="BranDigiOps home">
             <Image
               className="logo-img__next"
               src={mediaAssets.logo.src}
@@ -47,6 +48,12 @@ export function Footer() {
             AI-powered growth intelligence for Indian businesses — strategy,
             content, campaigns, and lead capture in one layer.
           </p>
+          <address className="footer-nap">
+            <strong>{footer.nap.name}</strong>
+            <span>{footer.nap.locality}</span>
+            <a href={footer.nap.phoneHref}>{footer.nap.phoneDisplay}</a>
+            <a href={`mailto:${footer.nap.email}`}>{footer.nap.email}</a>
+          </address>
         </div>
         <div>
           <p className="footer-col-title">Navigation</p>
@@ -56,49 +63,61 @@ export function Footer() {
                 {item.label}
               </Link>
             ))}
+            <Link href="/free-aeo-audit">Free AEO audit</Link>
+            <Link href="/growth-radar">Pre-tender lead generation</Link>
           </div>
         </div>
         <div>
           <p className="footer-col-title">Connect</p>
           <div className="footer-links">
-            <a href={`mailto:${footer.email}`} className="footer-contact-email">
+            <TrackedLink
+              href={`mailto:${footer.email}`}
+              className="footer-contact-email"
+              event="email_click"
+            >
               {footer.email}
-            </a>
-            <a
+            </TrackedLink>
+            <TrackedLink
               href={footer.whatsappHref}
               target="_blank"
               rel="noopener noreferrer"
               className="footer-whatsapp-link"
+              event="whatsapp_click"
             >
               <IconMessageCircle size={15} />
               WhatsApp us
-            </a>
+            </TrackedLink>
           </div>
         </div>
       </div>
 
-      {/* CTA contact section — anchor target for all /#contact CTAs */}
       <section className="contact-section" id="contact">
-        <h2 className="contact-title">{footer.contactTitle}</h2>
+        <p className="contact-title">{footer.contactTitle}</p>
         <p className="contact-lead">{footer.contactLead}</p>
+        <ContactForm source="contact" />
         <div className="contact-ctas">
           <BookingModal className="contact-cta-primary">
             <IconCalendar size={17} />
             Book a walkthrough
           </BookingModal>
-          <a
+          <TrackedLink
             className="contact-cta-whatsapp"
             href={footer.whatsappHref}
             target="_blank"
             rel="noopener noreferrer"
+            event="whatsapp_click"
           >
             <IconMessageCircle size={17} />
             WhatsApp us
-          </a>
-          <a className="contact-cta-email" href={`mailto:${footer.email}`}>
+          </TrackedLink>
+          <TrackedLink
+            className="contact-cta-email"
+            href={`mailto:${footer.email}`}
+            event="email_click"
+          >
             <IconMail size={17} />
             {footer.email}
-          </a>
+          </TrackedLink>
         </div>
         <div className="contact-socials">
           {footer.social.map((s, i) => (
@@ -118,7 +137,6 @@ export function Footer() {
         </div>
       </section>
 
-      {/* Bottom bar */}
       <div className="fbottom">
         <div className="footer-legal">
           <span>{footer.copyright}</span>

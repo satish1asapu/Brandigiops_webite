@@ -29,6 +29,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${siteUrl}/free-aeo-audit`,
+      lastModified: new Date("2026-08-12"),
+      changeFrequency: "monthly" as const,
+      priority: 0.85,
+    },
+    {
       url: `${siteUrl}/privacy-policy`,
       lastModified: new Date("2026-01-01"),
       changeFrequency: "yearly",
@@ -36,7 +42,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     ...blogArticles.map((article) => ({
       url: `${siteUrl}/blogs/${article.slug}`,
-      lastModified: new Date(article.dateIso),
+      lastModified: new Date(article.dateModified ?? article.dateIso),
       changeFrequency: "monthly" as const,
       priority: 0.8,
     })),

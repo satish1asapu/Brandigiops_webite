@@ -15,6 +15,7 @@ export type BlogArticleMeta = {
   description: string;
   date: string;
   dateIso: string;
+  dateModified: string;
   readTime: string;
   keywords: string[];
 };
@@ -33,6 +34,7 @@ export const blogArticles: BlogArticleMeta[] = [
       "Discover how BranDigiOps Revenue Engine Intelligence automatically identifies your business revenue model, detects growth drivers, and converts raw business data into actionable growth strategies.",
     date: "May 2026",
     dateIso: "2026-05-01",
+    dateModified: "2026-08-12",
     readTime: "8 min read",
     keywords: [
       "Revenue Engine Intelligence",
@@ -55,6 +57,7 @@ export const blogArticles: BlogArticleMeta[] = [
       "BranDigiOps Marketing Budget Intelligence automatically generates precision 12-month marketing budgets based on revenue targets, CAC efficiency, ROAS, and margin protection.",
     date: "May 2026",
     dateIso: "2026-05-15",
+    dateModified: "2026-08-12",
     readTime: "10 min read",
     keywords: [
       "AI marketing budget",
@@ -77,6 +80,7 @@ export const blogArticles: BlogArticleMeta[] = [
       "BranDigiOps Execution-Ready Marketing Planner automatically generates a complete weekly marketing roadmap — multi-channel, funnel-stage-aware, budget-scaled, and JSON-ready.",
     date: "May 2026",
     dateIso: "2026-05-20",
+    dateModified: "2026-08-12",
     readTime: "12 min read",
     keywords: [
       "AI marketing planner",
@@ -111,9 +115,9 @@ export function blogPostingJsonLd(
     headline: article.title,
     description: article.description,
     datePublished: article.dateIso,
+    dateModified: article.dateModified ?? article.dateIso,
     author: { "@type": "Organization", name: "BranDigiOps" },
     publisher: { "@type": "Organization", name: "BranDigiOps" },
-    keywords: article.keywords.join(", "),
     mainEntityOfPage: `${siteUrl}${blogArticlePath(article.slug)}`,
     image: `${siteUrl}${thumb.src}`,
   };

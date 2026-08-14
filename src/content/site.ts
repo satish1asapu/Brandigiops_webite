@@ -30,6 +30,8 @@ export const hero = {
   titleLine1: "AI-powered growth intelligence,",
   titleLine2: "built for Indian businesses.",
   titleAccent: "",
+  keywordLine:
+    "An AI-first digital marketing agency for Indian SMBs — strategy, content, campaigns and lead generation in one platform.",
   description:
     "Grow instantly. Sustain with branding consistency, digital presence, and humanized content — at scale and speed. BranDigiOps combines AI automation with human expertise to give Indian businesses a growth engine that never sleeps.",
   ctaLabel: "Book a 20-minute walkthrough",
@@ -57,6 +59,7 @@ export const stats = [
 export const about = {
   sectionLabel: "Who We Are",
   sectionTitle: "The thinking, the purpose, the people.",
+  keywordLine: "The AI marketing team behind BranDigiOps, Bengaluru",
   storyTitle: "Built on enterprise rigour. Driven by real growth.",
   storySubtitle:
     "25 years of mission-critical technology architecture — now applied to your growth stack.",
@@ -153,7 +156,7 @@ export const founder = {
     "Deterministic guardrails: reliable, repeatable, accountable output",
   ],
   cta: "Satish Asapu on LinkedIn →",
-  linkedIn: "https://linkedin.com/in/satish-asapu-71b8475",
+  linkedIn: "https://www.linkedin.com/in/satish-a-71b8475/",
 };
 
 export const fuelForBrand = {
@@ -166,6 +169,13 @@ export const footer = {
   contactTitle: "Let's see if we're a fit.",
   contactLead:
     "Book a 20-minute walkthrough, or send us your website and we'll run a free AI-visibility (AEO) snapshot on it.",
+  nap: {
+    name: "BranDigiOps",
+    locality: "Bengaluru, Karnataka, India",
+    phoneDisplay: "+91 7993191616",
+    phoneHref: "tel:+917993191616",
+    email: "tech@brandigiops.com",
+  },
   email: "tech@brandigiops.com",
   /**
    * Google Calendar Appointment Schedule embed URL.

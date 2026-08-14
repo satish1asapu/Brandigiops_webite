@@ -1,4 +1,4 @@
-# Brandigiops — Next.js app (`xbdo-site`)
+# BranDigiOps — Next.js app (`xbdo-site`)
 
 **Full documentation** (content vs styling vs SEO, examples, and next steps): **[`../README.md`](../README.md)** in the repository root.
 

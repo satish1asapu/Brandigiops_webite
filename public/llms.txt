@@ -1,0 +1,20 @@
+# BranDigiOps
+
+> BranDigiOps is an AI-powered growth intelligence platform based in
+> Bengaluru, India, serving Indian SMBs. It combines marketing strategy,
+> AI content production, campaign execution, performance analytics and
+> pre-tender lead intelligence (GrowthRadar) into one platform.
+
+## Core pages
+
+- [Home](https://brandigiops.com/): Growth Intelligence Suite overview
+- [GrowthRadar](https://brandigiops.com/growth-radar): Pre-tender and signal-stage lead intelligence for PEB construction, government IT tenders and insurance
+- [Who We Are](https://brandigiops.com/about): Team and founder
+- [Blogs](https://brandigiops.com/blogs): Guides and analysis
+- [Free AEO Audit](https://brandigiops.com/free-aeo-audit): Request a free AI-visibility snapshot
+
+## Key facts
+
+- Location: Bengaluru, Karnataka, India
+- Serves: Indian SMBs and mid-market businesses
+- Contact: tech@brandigiops.com | +91 7993191616

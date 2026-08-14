@@ -1,12 +1,12 @@
 {
-  "name": "Brandigiops — AI-Powered Digital Marketing",
-  "short_name": "Brandigiops",
-  "description": "AI-powered digital marketing, analytics, SEO, and conversion-focused campaigns.",
+  "name": "BranDigiOps — AI-Powered Growth Intelligence",
+  "short_name": "BranDigiOps",
+  "description": "AI-powered growth intelligence, analytics, AEO, and conversion-focused campaigns for Indian SMBs.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0a0a0f",
   "theme_color": "#0a0a0f",
-  "lang": "en-US",
+  "lang": "en-IN",
   "icons": [
     {
       "src": "/images/logo-b788b4d5.png",

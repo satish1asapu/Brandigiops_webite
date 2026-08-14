@@ -4,12 +4,14 @@ import { HomeClientChrome } from "@/components/HomeClientChrome";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { BlogCard } from "@/components/BlogCard";
+import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
+import { ContactForm } from "@/components/ContactForm";
 import { blogArticles } from "@/content/blogs";
 import { siteConfig, siteUrl } from "@/content/seo";
 
-const PAGE_TITLE = "Blogs & Articles";
+const PAGE_TITLE = "Growth Marketing Insights India";
 const PAGE_DESCRIPTION =
-  "Practical thinking on AI-powered growth intelligence — revenue engine classification, smarter marketing budgets, and execution-ready campaign operations for Indian SMBs.";
+  "Guides on AI marketing budgets, revenue engines, and weekly campaign ops for Indian SMBs — practical growth marketing insights from BranDigiOps.";
 
 export const metadata: Metadata = {
   title: PAGE_TITLE,
@@ -35,6 +37,7 @@ export default function BlogsPage() {
       headline: a.title,
       url: `${siteUrl}/blogs/${a.slug}`,
       datePublished: a.dateIso,
+      dateModified: a.dateModified ?? a.dateIso,
     })),
   };
 
@@ -44,33 +47,47 @@ export default function BlogsPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(blogJsonLd) }}
       />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Blogs", path: "/blogs" },
+        ]}
+      />
       <HomeClientChrome />
       <Header />
       <main>
 
-        {/* Page hero */}
         <section className="section page-hero">
           <div className="section-label">Insights</div>
           <h1 className="section-title">{PAGE_TITLE}</h1>
           <p className="section-subtitle">{PAGE_DESCRIPTION}</p>
+          <p className="blogs-intro">
+            These articles unpack how BranDigiOps turns revenue models into budgets,
+            plans, and weekly execution for Indian SMBs. Start with revenue
+            classification if you are clarifying how you earn; move to budget
+            intelligence when spend needs a model; use the execution planner when
+            strategy must become a weekly operating system. For product depth, see{" "}
+            <Link href="/growth-radar">
+              pre-tender lead generation with GrowthRadar
+            </Link>
+            .
+          </p>
         </section>
 
-        {/* Article list */}
         <section className="section blogs-page-body">
+          <h2 className="blogs-group-title">Growth Intelligence Suite</h2>
           <div className="blist">
             {blogArticles.map((article) => (
               <BlogCard key={article.slug} article={article} />
             ))}
           </div>
 
-          {/* Bottom CTA */}
           <div className="blogs-page-cta">
+            <h2 className="blogs-subscribe-title">Get a free AEO snapshot</h2>
             <p className="blogs-page-cta-text">
-              See how these ideas apply to your business.
+              Share your site and WhatsApp number — we&apos;ll show where you stand in AI search.
             </p>
-            <Link href="/#contact" className="hbtn-primary">
-              Book a walkthrough
-            </Link>
+            <ContactForm source="blogs" />
           </div>
         </section>
 

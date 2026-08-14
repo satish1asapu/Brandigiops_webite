@@ -46,7 +46,7 @@ export function Services() {
               {isLeadConversion && (
                 <Link href="/growth-radar" className="scard-radar-cta">
                   <IconSignal size={15} />
-                  Powered by GrowthRadar
+                  See how GrowthRadar finds pre-tender leads
                 </Link>
               )}
             </div>

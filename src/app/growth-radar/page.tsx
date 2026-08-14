@@ -1,5 +1,6 @@
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
 import { growthRadar } from "@/content/growth-radar";
 import {
   IconBuilding,
@@ -11,16 +12,16 @@ import {
 import Link from "next/link";
 
 export const metadata = {
-  title: "GrowthRadar — BranDigiOps",
+  title: "Pre-Tender Lead Generation India — GrowthRadar",
   description:
-    "Sector-specific AI intelligence engines that surface the right prospect, at the right moment, before they go to market.",
+    "Pre-tender lead generation for Indian businesses — PEB, government IT tenders, insurance prospects and custom sector intelligence before RFPs go live.",
   alternates: { canonical: "/growth-radar" },
   openGraph: {
     type: "website",
     url: "/growth-radar",
-    title: "GrowthRadar — BranDigiOps",
+    title: "Pre-Tender Lead Generation India — GrowthRadar | BranDigiOps",
     description:
-      "Sector-specific AI intelligence engines that surface the right prospect, at the right moment, before they go to market.",
+      "Pre-tender lead generation for Indian businesses — PEB, government IT tenders, insurance prospects and custom sector intelligence before RFPs go live.",
   },
 };
 
@@ -29,12 +30,19 @@ const radarIcons = [IconBuilding, IconCpu, IconSignal, IconShield, IconSliders];
 export default function GrowthRadarPage() {
   return (
     <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "GrowthRadar", path: "/growth-radar" },
+        ]}
+      />
       <Header />
       <main className="gr-main">
         {/* Hero */}
         <section className="section page-hero gr-hero">
           <div className="section-label">{growthRadar.badge}</div>
           <h1 className="section-title gr-hero-title">{growthRadar.title}</h1>
+          <h2 className="section-keyword">{growthRadar.keywordLine}</h2>
           <p className="section-subtitle gr-hero-sub">{growthRadar.subtitle}</p>
           <p className="gr-hero-desc">{growthRadar.description}</p>
         </section>
@@ -59,12 +67,14 @@ export default function GrowthRadarPage() {
                     </span>
                   </div>
                   <h2 className="gr-card-name">{r.name}</h2>
+                  <h3 className="gr-card-h3">What signals we track</h3>
                   <p className="gr-card-tagline">{r.tagline}</p>
+                  <h3 className="gr-card-h3">How early the signal appears</h3>
                   <p className="gr-card-summary">{r.summary}</p>
                   <div className="gr-card-deliverables">
-                    <p className="gr-deliverables-label">
-                      {isCustom ? "How it works" : "What you get"}
-                    </p>
+                    <h3 className="gr-deliverables-label">
+                      {isCustom ? "How it works" : "Who this is for"}
+                    </h3>
                     <ul>
                       {r.deliverables.map((d) => (
                         <li key={d}>{d}</li>
@@ -81,7 +91,9 @@ export default function GrowthRadarPage() {
                       href="/#contact"
                       className={`gr-cta${isCustom ? " gr-cta--custom" : ""}`}
                     >
-                      {isCustom ? "Let's design it →" : "Get in touch →"}
+                      {isCustom
+                        ? "Design a custom sector intelligence radar →"
+                        : "See how GrowthRadar finds pre-tender leads →"}
                     </Link>
                   </div>
                 </div>

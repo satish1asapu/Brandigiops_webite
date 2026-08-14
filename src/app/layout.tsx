@@ -7,10 +7,11 @@ import {
 } from "@/content/seo";
 import { mediaAssets } from "@/content/media-assets";
 import { fontBody, fontDisplay } from "@/lib/fonts";
+import { Analytics } from "@/components/Analytics";
 import "@/styles/globals.scss";
 
 export const viewport: Viewport = {
-  themeColor: siteConfig.themeColor,
+  themeColor: "#7c3aed",
   width: "device-width",
   initialScale: 1,
 };
@@ -22,7 +23,6 @@ export const metadata: Metadata = {
     template: siteConfig.titleTemplate,
   },
   description: siteConfig.description,
-  keywords: [...siteConfig.keywords],
   applicationName: siteConfig.name,
   authors: [{ name: siteConfig.name, url: siteUrl }],
   creator: siteConfig.name,
@@ -47,11 +47,10 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "/",
-    languages: { "en-US": "/" },
   },
   openGraph: {
     type: "website",
-    locale: siteConfig.locale,
+    locale: "en_IN",
     url: "/",
     siteName: siteConfig.name,
     title: siteConfig.title,
@@ -90,7 +89,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="en-IN"
       className={`${fontBody.variable} ${fontDisplay.variable} antialiased`}
     >
       <head>
@@ -103,6 +102,7 @@ export default function RootLayout({
       </head>
       <body id="home" className={fontBody.className} suppressHydrationWarning>
         {children}
+        <Analytics />
       </body>
     </html>
   );

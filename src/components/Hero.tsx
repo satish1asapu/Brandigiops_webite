@@ -21,6 +21,7 @@ export function Hero() {
           <br />
           <span className="hero-title-accent">{hero.titleAccent}</span>
         </h1>
+        <h2 className="hero-keyword">{hero.keywordLine}</h2>
         <p className="hero-desc">{hero.description}</p>
         <div className="hero-ctas">
           <BookingModal className="hbtn-primary">

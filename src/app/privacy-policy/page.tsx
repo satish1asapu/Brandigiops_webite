@@ -3,6 +3,7 @@ import { HomeClientChrome } from "@/components/HomeClientChrome";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { PrivacyPolicyContent } from "@/components/PrivacyPolicyContent";
+import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
 import { privacyPolicyMeta } from "@/content/privacy-policy";
 import { siteConfig, siteUrl } from "@/content/seo";
 
@@ -34,11 +35,17 @@ export default function PrivacyPolicyPage() {
   };
 
   return (
-    <> 
+    <>
       <HomeClientChrome />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Privacy Policy", path: "/privacy-policy" },
+        ]}
       />
       <Header />
       <main className="privacy-simple-page">

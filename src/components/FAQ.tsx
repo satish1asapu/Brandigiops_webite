@@ -1,8 +1,6 @@
 "use client";
 
-import { useState } from "react";
 import { faqs } from "@/content/faq";
-import { siteUrl } from "@/content/seo";
 import { BookingModal } from "./BookingModal";
 import { IconCalendar, IconMessageCircle, IconMail } from "./icons/SiteIcons";
 
@@ -20,12 +18,6 @@ const faqJsonLd = {
 };
 
 export function FAQ() {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
-
-  function toggle(i: number) {
-    setOpenIndex(openIndex === i ? null : i);
-  }
-
   return (
     <section className="section faq-section" id="faq" aria-label="Frequently Asked Questions">
       <script
@@ -40,52 +32,43 @@ export function FAQ() {
         </p>
       </div>
       <div className="faq-list">
-        {faqs.map((faq, i) => {
-          const isOpen = openIndex === i;
-          return (
-            <div key={i} className={`faq-item${isOpen ? " faq-item--open" : ""}`}>
-              <button
-                className="faq-question"
-                aria-expanded={isOpen}
-                onClick={() => toggle(i)}
-              >
-                <span>{faq.question}</span>
-                <span className="faq-icon" aria-hidden>
-                  {isOpen ? "−" : "+"}
-                </span>
-              </button>
-              {isOpen && (
-                <div className="faq-answer">
-                  <p>{faq.answer}</p>
-                  {faq.ctas && faq.ctas.length > 0 && (
-                    <div className="faq-ctas">
-                      {faq.ctas.map((cta) =>
-                        cta.icon === "calendar" ? (
-                          <BookingModal key={cta.label} className="faq-cta faq-cta--primary">
-                            <IconCalendar size={14} />
-                            {cta.label}
-                          </BookingModal>
-                        ) : (
-                          <a
-                            key={cta.label}
-                            href={cta.href}
-                            className={`faq-cta faq-cta--${cta.icon}`}
-                            target={cta.href.startsWith("http") ? "_blank" : undefined}
-                            rel={cta.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                          >
-                            {cta.icon === "whatsapp" && <IconMessageCircle size={14} />}
-                            {cta.icon === "email" && <IconMail size={14} />}
-                            {cta.label}
-                          </a>
-                        )
-                      )}
-                    </div>
+        {faqs.map((faq, i) => (
+          <details key={faq.question} className="faq-item" open={i < 5}>
+            <summary className="faq-question">
+              <h3 className="faq-question-text">{faq.question}</h3>
+              <span className="faq-icon" aria-hidden>
+                +
+              </span>
+            </summary>
+            <div className="faq-answer">
+              <p>{faq.answer}</p>
+              {faq.ctas && faq.ctas.length > 0 && (
+                <div className="faq-ctas">
+                  {faq.ctas.map((cta) =>
+                    cta.icon === "calendar" ? (
+                      <BookingModal key={cta.label} className="faq-cta faq-cta--primary">
+                        <IconCalendar size={14} />
+                        {cta.label}
+                      </BookingModal>
+                    ) : (
+                      <a
+                        key={cta.label}
+                        href={cta.href}
+                        className={`faq-cta faq-cta--${cta.icon}`}
+                        target={cta.href.startsWith("http") ? "_blank" : undefined}
+                        rel={cta.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                      >
+                        {cta.icon === "whatsapp" && <IconMessageCircle size={14} />}
+                        {cta.icon === "email" && <IconMail size={14} />}
+                        {cta.label}
+                      </a>
+                    ),
                   )}
                 </div>
               )}
             </div>
-          );
-        })}
+          </details>
+        ))}
       </div>
     </section>
   );
