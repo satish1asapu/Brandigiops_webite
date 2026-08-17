@@ -20,7 +20,8 @@ export function Header() {
           height={mediaAssets.logo.height}
           priority
           quality={100}
-          sizes="(max-width: 640px) 140px, 186px"
+          sizes="(max-width: 640px) 280px, (max-width: 768px) 320px, 400px"
+          style={{ height: "100%", width: "auto" }}
         />
       </Link>
       <nav className="nav" id="nav">
