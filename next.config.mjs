@@ -1,6 +1,16 @@
+import path from "path";
+import { fileURLToPath } from "url";
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  /** Pin the app root so builds are not written to the parent folder. */
+  outputFileTracingRoot: __dirname,
+  turbopack: {
+    root: __dirname,
+  },
   /** Hide the dev-only bubble (Route / Bundler / preferences) in the corner. */
   devIndicators: false,
   images: {
