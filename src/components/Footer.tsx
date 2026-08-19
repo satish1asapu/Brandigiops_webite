@@ -24,9 +24,12 @@ const socialIcon = {
   youtube: (
     <path d="M23.498 6.186a2.997 2.997 0 00-2.11-2.12C19.505 3.5 12 3.5 12 3.5s-7.505 0-9.389.566a2.997 2.997 0 00-2.11 2.12C0 8.08 0 12 0 12s0 3.92.501 5.814a2.997 2.997 0 002.11 2.12C4.495 20.5 12 20.5 12 20.5s7.505 0 9.389-.566a2.997 2.997 0 002.11-2.12C24 15.92 24 12 24 12s0-3.92-.502-5.814zM9.75 15.568V8.432L15.818 12 9.75 15.568z" />
   ),
+  google: (
+    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+  ),
 } as const;
 
-const keys = ["x", "linkedin", "facebook", "instagram", "youtube"] as const;
+const keys = ["x", "linkedin", "facebook", "instagram", "youtube", "google"] as const;
 
 export function Footer() {
   return (

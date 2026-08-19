@@ -62,6 +62,7 @@ export const organizationJsonLd = {
     "https://www.facebook.com/BrandigiopsMarketing",
     "https://www.instagram.com/brandigiops.marketing",
     "https://www.youtube.com/@BranDigiOpsMarketing",
+    "https://www.google.com/search?q=BranDigiOps+Marketing+:+AI+Digital+Marketing&stick=H4sIAAAAAAAA_-NgU1I1qDBOSkw1NDQ0MElLMjQ2SbW0MqgwMU-1NE02skgEyhklplgsYtVxKkrMc8lMz_QvKFbwTSzKTi3JzEtXsFJw9FQACZck5iCEAaUj6ntYAAAA&hl=en",
   ],
   knowsAbout: [
     "AI-powered digital marketing",

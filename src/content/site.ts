@@ -193,5 +193,9 @@ export const footer = {
     { label: "Facebook", href: "https://www.facebook.com/BrandigiopsMarketing" },
     { label: "Instagram", href: "https://www.instagram.com/brandigiops.marketing" },
     { label: "YouTube", href: "https://www.youtube.com/@BranDigiOpsMarketing" },
+    {
+      label: "Google",
+      href: "https://www.google.com/search?q=BranDigiOps+Marketing+:+AI+Digital+Marketing&stick=H4sIAAAAAAAA_-NgU1I1qDBOSkw1NDQ0MElLMjQ2SbW0MqgwMU-1NE02skgEyhklplgsYtVxKkrMc8lMz_QvKFbwTSzKTi3JzEtXsFJw9FQACZck5iCEAaUj6ntYAAAA&hl=en",
+    },
   ],
 };
