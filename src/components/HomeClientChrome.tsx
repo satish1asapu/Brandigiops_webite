@@ -43,9 +43,12 @@ export function HomeClientChrome() {
       navAs.forEach((a) => {
         const el = a as HTMLAnchorElement;
         const href = el.getAttribute("href") ?? "";
+        const path = window.location.pathname;
         const isActive =
+          href === path ||
           href === `/#${c}` ||
-          (c === "blogs" && window.location.pathname.startsWith("/blogs"));
+          (href === "/solutions" && c === "solutions") ||
+          (c === "blogs" && path.startsWith("/blogs"));
         el.style.color = isActive ? "var(--primary)" : "";
       });
     };

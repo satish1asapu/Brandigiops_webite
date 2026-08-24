@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { about } from "@/content/site";
 import { IconCompass, IconTelescope } from "./icons/SiteIcons";
 
@@ -7,6 +8,7 @@ export function About() {
       <div className="section-header">
         <div className="section-label">{about.sectionLabel}</div>
         <h2 className="section-title">{about.sectionTitle}</h2>
+        <h3 className="section-keyword">{about.keywordLine}</h3>
       </div>
       <div className="wu-grid">
         <div className="wcard reveal">
@@ -24,6 +26,11 @@ export function About() {
           <p className="wcard-desc">{about.vision.body}</p>
         </div>
       </div>
+      <p className="about-home-cta">
+        <Link href={about.ctaHref} className="scard-cta">
+          {about.ctaLabel} →
+        </Link>
+      </p>
     </section>
   );
 }

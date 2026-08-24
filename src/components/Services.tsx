@@ -27,6 +27,9 @@ export function Services() {
         <div className="section-label services-eyebrow">{servicesSection.sectionLabel}</div>
         <h2 className="section-title">{servicesSection.title}</h2>
         <p className="section-subtitle">{servicesSection.sectionSubtitle}</p>
+        <Link href={servicesSection.viewAllHref} className="blogs-view-all">
+          {servicesSection.viewAllLabel} →
+        </Link>
       </div>
       <div className="sgrid">
         {servicesSection.items.map((s, i) => {
@@ -43,12 +46,17 @@ export function Services() {
               <div className="scard-num">{s.num}</div>
               <h3 className="scard-title">{s.name}</h3>
               <p className="scard-desc">{s.description}</p>
-              {isLeadConversion && (
-                <Link href="/growth-radar" className="scard-radar-cta">
-                  <IconSignal size={15} />
-                  See how GrowthRadar finds pre-tender leads
+              <div className="scard-ctas">
+                <Link href={s.href} className="scard-cta">
+                  {s.cta} →
                 </Link>
-              )}
+                {"extraCta" in s && s.extraCta && (
+                  <Link href={s.extraCta.href} className="scard-cta">
+                    <IconSignal size={15} />
+                    {s.extraCta.label}
+                  </Link>
+                )}
+              </div>
             </div>
           );
         })}

@@ -122,6 +122,7 @@ export const servicesJsonLd = {
         name: "AI-Driven Marketing Plan",
         description:
           "Revenue-model-first marketing strategy that maps channels, budget, and targeting to how your business actually earns.",
+        url: `${siteUrl}/solutions#marketing-plan`,
         provider: { "@type": "Organization", "@id": `${siteUrl}/#organization` },
         areaServed: "IN",
       },
@@ -134,6 +135,7 @@ export const servicesJsonLd = {
         name: "AI-Powered Ecosystem Watchdog",
         description:
           "Always-on monitoring across channels and category — surfaces keyword gaps, competitor moves, and audience signals in hours.",
+        url: `${siteUrl}/solutions#ecosystem-watchdog`,
         provider: { "@type": "Organization", "@id": `${siteUrl}/#organization` },
         areaServed: "IN",
       },
@@ -146,6 +148,7 @@ export const servicesJsonLd = {
         name: "AI Content Studio",
         description:
           "Platform-native video, imagery, and captions produced at campaign pace — iterated against real performance data.",
+        url: `${siteUrl}/solutions#content-studio`,
         provider: { "@type": "Organization", "@id": `${siteUrl}/#organization` },
         areaServed: "IN",
       },
@@ -158,6 +161,7 @@ export const servicesJsonLd = {
         name: "Campaign Execution",
         description:
           "Full campaign management across digital channels — launched, optimised, and reported with live performance data.",
+        url: `${siteUrl}/solutions#campaign-execution`,
         provider: { "@type": "Organization", "@id": `${siteUrl}/#organization` },
         areaServed: "IN",
       },
@@ -170,6 +174,7 @@ export const servicesJsonLd = {
         name: "Performance Analytics",
         description:
           "Unified dashboard across website, Google Business Profile, social, and AI search visibility (AEO/GEO) plus competitor tracking.",
+        url: `${siteUrl}/solutions#performance-analytics`,
         provider: { "@type": "Organization", "@id": `${siteUrl}/#organization` },
         areaServed: "IN",
       },
@@ -182,6 +187,7 @@ export const servicesJsonLd = {
         name: "Lead Conversion Pipeline",
         description:
           "Signal-stage lead intelligence matched to your ICP — surfacing prospects from public regulatory filings, procurement portals, and market signals before they formally go to market. Leads are enriched with contact details and guided from first signal to customer with structured multi-channel follow-up.",
+        url: `${siteUrl}/solutions#lead-conversion`,
         provider: { "@type": "Organization", "@id": `${siteUrl}/#organization` },
         areaServed: "IN",
       },

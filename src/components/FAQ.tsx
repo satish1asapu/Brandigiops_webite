@@ -1,8 +1,11 @@
 "use client";
 
+import { useState } from "react";
 import { faqs } from "@/content/faq";
 import { BookingModal } from "./BookingModal";
 import { IconCalendar, IconMessageCircle, IconMail } from "./icons/SiteIcons";
+
+const PREVIEW_COUNT = 4;
 
 const faqJsonLd = {
   "@context": "https://schema.org",
@@ -18,6 +21,9 @@ const faqJsonLd = {
 };
 
 export function FAQ() {
+  const [showAll, setShowAll] = useState(false);
+  const visible = showAll ? faqs : faqs.slice(0, PREVIEW_COUNT);
+
   return (
     <section className="section faq-section" id="faq" aria-label="Frequently Asked Questions">
       <script
@@ -32,8 +38,8 @@ export function FAQ() {
         </p>
       </div>
       <div className="faq-list">
-        {faqs.map((faq, i) => (
-          <details key={faq.question} className="faq-item" open={i < 5}>
+        {visible.map((faq) => (
+          <details key={faq.question} className="faq-item">
             <summary className="faq-question">
               <h3 className="faq-question-text">{faq.question}</h3>
               <span className="faq-icon" aria-hidden>
@@ -70,6 +76,18 @@ export function FAQ() {
           </details>
         ))}
       </div>
+      {faqs.length > PREVIEW_COUNT && (
+        <div className="faq-more-wrap">
+          <button
+            type="button"
+            className="faq-more"
+            onClick={() => setShowAll((open) => !open)}
+            aria-expanded={showAll}
+          >
+            {showAll ? "Show less" : "View more"}
+          </button>
+        </div>
+      )}
     </section>
   );
 }

@@ -18,7 +18,7 @@ export const siteImages = {
 
 export const navigation = [
   { href: "/#home", label: "Home" },
-  { href: "/#solutions", label: "Solutions" },
+  { href: "/solutions", label: "Solutions" },
   { href: "/growth-radar", label: "GrowthRadar" },
   { href: "/blogs", label: "Blogs" },
   { href: "/about", label: "Who We Are" },
@@ -73,6 +73,8 @@ export const about = {
     body:
       "We want growth to feel less like guesswork and more like operations you can see and improve. A future where an SMB owner in Bengaluru has the same calibre of growth intelligence that enterprise teams pay lakhs for — priced and packaged for how Indian businesses actually run.",
   },
+  ctaLabel: "Read the full story",
+  ctaHref: "/about",
 };
 
 export const servicesSection = {
@@ -80,9 +82,14 @@ export const servicesSection = {
   title: "SolutionStack",
   sectionSubtitle:
     "Six integrated solution pillars designed to cover every dimension of your digital growth.",
+  viewAllHref: "/solutions",
+  viewAllLabel: "View all solutions",
   items: [
     {
       num: "01",
+      slug: "marketing-plan",
+      href: "/solutions#marketing-plan",
+      cta: "Learn more",
       icon: "🎯",
       name: "AI-Driven Marketing Plan",
       tag: "Strategy",
@@ -91,6 +98,9 @@ export const servicesSection = {
     },
     {
       num: "02",
+      slug: "ecosystem-watchdog",
+      href: "/solutions#ecosystem-watchdog",
+      cta: "Learn more",
       icon: "👁️",
       name: "AI-Powered Ecosystem Watchdog",
       tag: "Monitoring",
@@ -99,6 +109,9 @@ export const servicesSection = {
     },
     {
       num: "03",
+      slug: "content-studio",
+      href: "/solutions#content-studio",
+      cta: "Learn more",
       icon: "✏️",
       name: "AI Content Studio",
       tag: "Content",
@@ -107,6 +120,9 @@ export const servicesSection = {
     },
     {
       num: "04",
+      slug: "campaign-execution",
+      href: "/solutions#campaign-execution",
+      cta: "Learn more",
       icon: "🚀",
       name: "Campaign Execution",
       tag: "Campaigns",
@@ -115,6 +131,9 @@ export const servicesSection = {
     },
     {
       num: "05",
+      slug: "performance-analytics",
+      href: "/solutions#performance-analytics",
+      cta: "Learn more",
       icon: "📊",
       name: "Performance Analytics",
       tag: "Analytics",
@@ -123,11 +142,43 @@ export const servicesSection = {
     },
     {
       num: "06",
+      slug: "lead-conversion",
+      href: "/solutions#lead-conversion",
+      cta: "Learn more",
+      extraCta: {
+        href: "/growth-radar",
+        label: "See how GrowthRadar finds pre-tender leads",
+      },
       icon: "🔄",
       name: "Lead Conversion Pipeline",
       tag: "Conversion",
       description:
         "Targeted leads matched to your ideal customer profile, drawn from social and other channels, then guided from first touch to customer with follow-up that doesn't drop the ball. Built for multi-channel, not a single source.",
+    },
+  ],
+};
+
+export const toolsSection = {
+  sectionLabel: "Ready to use",
+  title: "Tools",
+  sectionSubtitle:
+    "Live products you can open now — pre-tender lead intelligence and a free AI-visibility check.",
+  items: [
+    {
+      name: "GrowthRadar",
+      tag: "Lead intelligence",
+      description:
+        "Sector-specific radars that surface PEB, government IT, insurance, and SMB prospects from public signals — before an RFP goes live.",
+      href: "/growth-radar",
+      cta: "Open GrowthRadar",
+    },
+    {
+      name: "Free AEO Audit",
+      tag: "AI visibility",
+      description:
+        "Send your website URL. We snapshot how ChatGPT, Perplexity, and Google AI Overviews currently see — or miss — your brand.",
+      href: "/free-aeo-audit",
+      cta: "Request a free audit",
     },
   ],
 };
