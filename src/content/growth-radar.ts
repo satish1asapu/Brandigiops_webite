@@ -20,7 +20,7 @@ export const growthRadar = {
         "Geo + capacity-band filtering",
         "Sources: publicly available environmental, land, company, and regulatory databases"
       ],
-      pricing: "₹50,000 / mo",
+      pricing: "$500 / mo",
       pricingNote: "Custom pricing for multi-state coverage",
       accent: "#7c3aed"
     },
@@ -37,7 +37,7 @@ export const growthRadar = {
         "Value-band filtering across small, mid, and large contracts",
         "MSME eligibility flags and corrigendum tracking"
       ],
-      pricing: "₹50,000 / mo",
+      pricing: "$500 / mo",
       pricingNote: "All-Global or state-specific plans available",
       accent: "#22d3ee"
     },
@@ -54,7 +54,7 @@ export const growthRadar = {
         "Keyword-gated signal matching per client",
         "CRM-ready export"
       ],
-      pricing: "Starting ₹8,000 / mo",
+      pricing: "$150 / mo",
       pricingNote: "Per-client configuration included",
       accent: "#10b981"
     },
@@ -71,7 +71,7 @@ export const growthRadar = {
         "Risk-trigger timeline per company",
         "Serviceable territory + appetite filtering"
       ],
-      pricing: "₹50,000 / mo",
+      pricing: "$500 / mo",
       pricingNote: "Custom pricing for enterprise insurers",
       accent: "#ef4444"
     },

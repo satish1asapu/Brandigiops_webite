@@ -39,7 +39,7 @@ export const organizationJsonLd = {
   image: `${siteUrl}${mediaAssets.logo.src}`,
   description: siteConfig.description,
   telephone: "+91-7993191616",
-  priceRange: "INR",
+  priceRange: "USD",
   email: "tech@brandigiops.com",
   address: {
     "@type": "PostalAddress",
