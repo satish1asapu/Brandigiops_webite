@@ -9,9 +9,9 @@ import { ContactForm } from "@/components/ContactForm";
 import { blogArticles } from "@/content/blogs";
 import { siteConfig, siteUrl } from "@/content/seo";
 
-const PAGE_TITLE = "Growth Marketing Insights India";
+const PAGE_TITLE = "Growth Marketing Insights Global";
 const PAGE_DESCRIPTION =
-  "Guides on AI marketing budgets, revenue engines, and weekly campaign ops for Indian SMBs — practical growth marketing insights from BranDigiOps.";
+  "Guides on AI marketing budgets, revenue engines, and weekly campaign ops for Global SMBs — practical growth marketing insights from BranDigiOps.";
 
 export const metadata: Metadata = {
   title: PAGE_TITLE,
@@ -63,7 +63,7 @@ export default function BlogsPage() {
           <p className="section-subtitle">{PAGE_DESCRIPTION}</p>
           <p className="blogs-intro">
             These articles unpack how BranDigiOps turns revenue models into budgets,
-            plans, and weekly execution for Indian SMBs. Start with revenue
+            plans, and weekly execution for Global SMBs. Start with revenue
             classification if you are clarifying how you earn; move to budget
             intelligence when spend needs a model; use the execution planner when
             strategy must become a weekly operating system. For product depth, see{" "}

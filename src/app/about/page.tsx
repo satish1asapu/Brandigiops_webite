@@ -11,14 +11,14 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Who We Are — AI Marketing Team in Bengaluru",
   description:
-    "Meet the BranDigiOps AI marketing team in Bengaluru — enterprise architects building growth intelligence for Indian SMBs.",
+    "Meet the BranDigiOps AI marketing team in Bengaluru — enterprise architects building growth intelligence for Global SMBs.",
   alternates: { canonical: "/about" },
   openGraph: {
     type: "website",
     url: "/about",
     title: "Who We Are — AI Marketing Team in Bengaluru | BranDigiOps",
     description:
-      "Meet the BranDigiOps AI marketing team in Bengaluru — enterprise architects building growth intelligence for Indian SMBs.",
+      "Meet the BranDigiOps AI marketing team in Bengaluru — enterprise architects building growth intelligence for Global SMBs.",
   },
 };
 
@@ -41,7 +41,7 @@ export default function AboutPage() {
           <h1 className="section-title">{about.sectionTitle}</h1>
           <h2 className="section-keyword">{about.keywordLine}</h2>
           <p className="section-subtitle">
-            BranDigiOps exists to give Indian SMBs the same calibre of growth
+            BranDigiOps exists to give Global SMBs the same calibre of growth
             intelligence that enterprise teams pay lakhs for — priced for how
             real businesses run, built by people who have operated at both ends
             of that scale.
@@ -56,7 +56,7 @@ export default function AboutPage() {
                 <IconCompass size={22} />
               </div>
               <h2 className="wcard-title">{about.mission.heading}</h2>
-              <h3 className="wcard-subhead">Why Indian SMBs need one growth layer</h3>
+              <h3 className="wcard-subhead">Why Global SMBs need one growth layer</h3>
               <p className="wcard-desc">{about.mission.body}</p>
             </div>
             <div className="wcard reveal">
@@ -83,10 +83,10 @@ export default function AboutPage() {
           <p className="about-related">
             See how{" "}
             <Link href="/growth-radar">
-              GrowthRadar finds pre-tender leads for Indian businesses
+              GrowthRadar finds pre-tender leads for Global businesses
             </Link>{" "}
             — or read our{" "}
-            <Link href="/blogs">growth marketing insights for India</Link>.
+            <Link href="/blogs">growth marketing insights for Global</Link>.
           </p>
 
           {/* Human oversight note — subtle trust signal, not a feature */}

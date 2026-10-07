@@ -23,12 +23,12 @@ export const faqs: Faq[] = [
   {
     question: "What is BranDigiOps and what does it do?",
     answer:
-      "BranDigiOps is an AI-powered growth intelligence platform built for Indian SMBs. It plans, creates, and runs marketing across search, social, and AI answer engines — in one integrated layer. Instead of juggling six disconnected tools, you get strategy, content, campaigns, analytics, and lead capture under a single system that understands how your business earns.",
+      "BranDigiOps is an AI-powered growth intelligence platform built for Global SMBs. It plans, creates, and runs marketing across search, social, and AI answer engines — in one integrated layer. Instead of juggling six disconnected tools, you get strategy, content, campaigns, analytics, and lead capture under a single system that understands how your business earns.",
   },
   {
     question: "How is BranDigiOps different from a regular digital marketing agency?",
     answer:
-      "Most agencies start with channels. BranDigiOps starts with your revenue model — footfall, leads, subscriptions, or high-ticket deals — and builds the plan around that. AI reads your category in real time, generates content at campaign pace, and tracks results including visibility in AI search tools like ChatGPT and Perplexity. It combines the strategic depth of an enterprise growth team with pricing built for Indian SMBs.",
+      "Most agencies start with channels. BranDigiOps starts with your revenue model — footfall, leads, subscriptions, or high-ticket deals — and builds the plan around that. AI reads your category in real time, generates content at campaign pace, and tracks results including visibility in AI search tools like ChatGPT and Perplexity. It combines the strategic depth of an enterprise growth team with pricing built for Global SMBs.",
   },
   {
     question: "What is Answer Engine Optimization (AEO) and why does it matter?",
@@ -61,9 +61,9 @@ export const faqs: Faq[] = [
       "BranDigiOps's Performance Analytics dashboard includes an AEO (Answer Engine Optimization) module that monitors whether ChatGPT, Perplexity, Google AI Overviews, and Gemini mention your business for relevant category queries. It surfaces visibility gaps and competitor mentions, and feeds that signal back into content strategy — so your AEO footprint grows over time.",
   },
   {
-    question: "Is BranDigiOps suitable for small businesses in India?",
+    question: "Is BranDigiOps suitable for small businesses in Global?",
     answer:
-      "Yes — BranDigiOps is built specifically for Indian SMBs. The pricing is designed for how Indian businesses budget, and the platform understands local channels: Google Business Profile, WhatsApp, regional procurement portals, and Indian regulatory data sources. Clients include a Bengaluru PEB construction firm, a Marathahalli preschool group, an electronics manufacturer, and an industrial building-materials company.",
+      "Yes — BranDigiOps is built specifically for Global SMBs. The pricing is designed for how Global businesses budget, and the platform understands local channels: Google Business Profile, WhatsApp, regional procurement portals, and Global regulatory data sources. Clients include a Bengaluru PEB construction firm, a Marathahalli preschool group, an electronics manufacturer, and an industrial building-materials company.",
   },
   {
     question: "What results can I expect from BranDigiOps?",
@@ -86,9 +86,9 @@ export const faqs: Faq[] = [
       "Signal-stage lead generation identifies prospects at the earliest detectable moment of intent — before they go to market with a formal tender, RFP, or quote request. Signals include regulatory clearances, environmental approvals, land allotments, company funding announcements, procurement portal registrations, and expansion filings. Acting on signals rather than tenders means you reach prospects while they are still in discovery and relationship mode, not price-comparison mode. GrowthRadar is built on this model: it reads public databases continuously and converts raw signals into a prioritised contact list your team can act on immediately.",
   },
   {
-    question: "How can Indian SMBs compete with larger companies for government tenders?",
+    question: "How can Global SMBs compete with larger companies for government tenders?",
     answer:
-      "Large companies win government tenders partly because they have dedicated teams watching procurement portals full-time, and partly because they have pre-existing relationships from earlier projects. GrowthRadar addresses both: it monitors central and state government e-procurement portals for IT hardware tenders — filtered to your capacity, MSME eligibility, and Make-in-India preference class — and alerts you before deadlines close. More importantly, it also surfaces pre-tender signals such as budget approvals and departmental procurement registrations, so SMBs can initiate contact before the tender, building the same early-relationship advantage that larger players rely on.",
+      "Large companies win government tenders partly because they have dedicated teams watching procurement portals full-time, and partly because they have pre-existing relationships from earlier projects. GrowthRadar addresses both: it monitors central and state government e-procurement portals for IT hardware tenders — filtered to your capacity, MSME eligibility, and Make-in-Global preference class — and alerts you before deadlines close. More importantly, it also surfaces pre-tender signals such as budget approvals and departmental procurement registrations, so SMBs can initiate contact before the tender, building the same early-relationship advantage that larger players rely on.",
   },
   {
     question: "How does early engagement before a tender improve win rates?",
@@ -101,9 +101,9 @@ export const faqs: Faq[] = [
       "The most reliable method is to monitor the public signals that precede a buying decision — regulatory clearances, land allotments, funding announcements, company formation filings, and procurement portal activity — and use those signals to identify the right person to contact at the right company at the right moment. GrowthRadar does this automatically: it reads public databases, scores the signals by urgency and fit, enriches the leads with contact information including phone numbers, email addresses, and decision-maker names, and delivers a CRM-ready list your team can act on the same day.",
   },
   {
-    question: "What are the most common problems with digital marketing agencies in India?",
+    question: "What are the most common problems with digital marketing agencies in Global?",
     answer:
-      "The most common complaints Indian businesses report about digital marketing agencies are: upfront retainer payments with no performance accountability; results that depend entirely on one account manager who may leave or go on leave; strategy delivered as a PowerPoint that never gets executed; content and campaigns managed in separate tools with no unified view; and monthly reviews that recap the past without a clear plan for the next cycle. The core structural issue is that traditional agencies sell time and effort, not outcomes — so the incentive is to look busy, not to drive measurable growth.",
+      "The most common complaints Global businesses report about digital marketing agencies are: upfront retainer payments with no performance accountability; results that depend entirely on one account manager who may leave or go on leave; strategy delivered as a PowerPoint that never gets executed; content and campaigns managed in separate tools with no unified view; and monthly reviews that recap the past without a clear plan for the next cycle. The core structural issue is that traditional agencies sell time and effort, not outcomes — so the incentive is to look busy, not to drive measurable growth.",
   },
   {
     question: "How do I stop depending on a marketing agency for every small task?",
@@ -131,14 +131,14 @@ export const faqs: Faq[] = [
       "An AI ecosystem watchdog is a continuous monitoring system that reads your competitive category — keyword rankings, content publication, social signals, and AI search citations — and alerts you to changes that require a response. Instead of discovering a competitor has dominated a new keyword category at your quarterly review, the watchdog surfaces it the week it happens. It also identifies content gaps your brand should fill, audience questions that are being answered by competitors but not by you, and emerging topics in your sector that represent an opportunity to publish first and establish authority. BranDigiOps's Ecosystem Watchdog runs continuously across your channels and category.",
   },
   {
-    question: "How does thought leadership content help an Indian SMB grow?",
+    question: "How does thought leadership content help an Global SMB grow?",
     answer:
-      "Thought leadership content — articles, posts, and videos that express a point of view on your industry, not just promote your product — builds trust and visibility in a way that paid advertising cannot. When a prospect is researching their options, the businesses they find through organic search, AI tools, and social sharing are the ones that have published credible, useful content consistently. For Indian SMBs, the opportunity is that most competitors are not doing this systematically — the bar to be the most visible and credible voice in a local sector category is lower than it appears. BranDigiOps's AI Content Studio produces thought leadership content at campaign pace, distributing across the platforms where your buyers spend time and tracking whether that content is being cited by AI tools.",
+      "Thought leadership content — articles, posts, and videos that express a point of view on your industry, not just promote your product — builds trust and visibility in a way that paid advertising cannot. When a prospect is researching their options, the businesses they find through organic search, AI tools, and social sharing are the ones that have published credible, useful content consistently. For Global SMBs, the opportunity is that most competitors are not doing this systematically — the bar to be the most visible and credible voice in a local sector category is lower than it appears. BranDigiOps's AI Content Studio produces thought leadership content at campaign pace, distributing across the platforms where your buyers spend time and tracking whether that content is being cited by AI tools.",
   },
   {
     question: "Is there a digital marketing platform that integrates strategy, content, campaigns, and reporting in one place?",
     answer:
-      "Most Indian SMBs run their marketing across five or six disconnected systems: a freelance designer for content, a separate agency for ads, Google Analytics for website data, a social scheduling tool, and a spreadsheet for leads. None of these talk to each other, so there is no unified view of what is working, and switching between them wastes time that should go into decisions. BranDigiOps is built as a single intelligence layer that connects strategy, content production, campaign execution, performance analytics, AI search visibility, and lead intelligence. The plan informs the content. The content feeds the campaigns. The campaigns generate the analytics. The analytics update the plan. All in one place, updated continuously, with no coordination overhead between disconnected tools.",
+      "Most Global SMBs run their marketing across five or six disconnected systems: a freelance designer for content, a separate agency for ads, Google Analytics for website data, a social scheduling tool, and a spreadsheet for leads. None of these talk to each other, so there is no unified view of what is working, and switching between them wastes time that should go into decisions. BranDigiOps is built as a single intelligence layer that connects strategy, content production, campaign execution, performance analytics, AI search visibility, and lead intelligence. The plan informs the content. The content feeds the campaigns. The campaigns generate the analytics. The analytics update the plan. All in one place, updated continuously, with no coordination overhead between disconnected tools.",
   },
   {
     question: "How do I get marketing execution, not just a strategy document?",
@@ -170,6 +170,6 @@ export const faqs: Faq[] = [
   {
     question: "Where is BranDigiOps based?",
     answer:
-      "BranDigiOps is based in Bengaluru, Karnataka, India, and serves SMBs across India. GrowthRadar products can be configured for specific geographies — from a single city to all-India coverage.",
+      "BranDigiOps is based in Bengaluru, Karnataka, India, and serves SMBs across Global. GrowthRadar products can be configured for specific geographies — from a single city to all-Global coverage.",
   },
 ] as const;

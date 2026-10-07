@@ -23,10 +23,10 @@ export const defaultOgImage = {
 
 export const siteConfig = {
   name: "BranDigiOps",
-  title: "AI Growth Intelligence for Indian SMBs | BranDigiOps",
+  title: "AI Growth Intelligence for Global SMBs | BranDigiOps",
   titleTemplate: "%s | BranDigiOps",
   description:
-    "AI-first digital marketing for Indian SMBs — strategy, content, campaigns, and pre-tender lead intelligence in one platform. Based in Bengaluru.",
+    "AI-first digital marketing for Global SMBs — strategy, content, campaigns, and pre-tender lead intelligence in one platform. Based in Bengaluru.",
 } as const;
 
 export const organizationJsonLd = {
@@ -67,10 +67,10 @@ export const organizationJsonLd = {
   knowsAbout: [
     "AI-powered digital marketing",
     "Answer Engine Optimization",
-    "Growth intelligence for Indian SMBs",
+    "Growth intelligence for Global SMBs",
     "Signal-stage lead generation",
     "Pre-tender business intelligence",
-    "Government procurement intelligence India",
+    "Government procurement intelligence Global",
     "Construction project signal monitoring",
     "Lead generation before RFP",
     "Competitive intelligence before tender",
@@ -85,7 +85,7 @@ export const organizationJsonLd = {
     "Week-on-week performance benchmarking",
     "Competitor tracking and gap analysis",
     "Transparent performance reporting",
-    "AI marketing strategy for Indian SMBs",
+    "AI marketing strategy for Global SMBs",
   ],
 } as const;
 
@@ -112,7 +112,7 @@ export const servicesJsonLd = {
   "@id": `${siteUrl}/#solutions`,
   name: "BranDigiOps Growth Intelligence Solutions",
   description:
-    "Six integrated solution pillars covering every dimension of digital growth for Indian SMBs.",
+    "Six integrated solution pillars covering every dimension of digital growth for Global SMBs.",
   itemListElement: [
     {
       "@type": "ListItem",
@@ -201,7 +201,7 @@ export const founderJsonLd = {
   name: "Satish Asapu",
   jobTitle: "Founder & Enterprise Architect",
   description:
-    "25-year enterprise architect with experience at Credit Suisse, UBS, and Bank of America. TOGAF 9 certified. Founder of BranDigiOps, applying mission-critical banking infrastructure discipline to AI-powered growth intelligence for Indian SMBs.",
+    "25-year enterprise architect with experience at Credit Suisse, UBS, and Bank of America. TOGAF 9 certified. Founder of BranDigiOps, applying mission-critical banking infrastructure discipline to AI-powered growth intelligence for Global SMBs.",
   url: `${siteUrl}/about`,
   sameAs: ["https://www.linkedin.com/in/satish-a-71b8475/"],
   worksFor: {

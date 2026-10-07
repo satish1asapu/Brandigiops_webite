@@ -12,16 +12,16 @@ import {
 import Link from "next/link";
 
 export const metadata = {
-  title: "Pre-Tender Lead Generation India — GrowthRadar",
+  title: "Pre-Tender Lead Generation Global — GrowthRadar",
   description:
-    "Pre-tender lead generation for Indian businesses — PEB, government IT tenders, insurance prospects and custom sector intelligence before RFPs go live.",
+    "Pre-tender lead generation for Global businesses — PEB, government IT tenders, insurance prospects and custom sector intelligence before RFPs go live.",
   alternates: { canonical: "/growth-radar" },
   openGraph: {
     type: "website",
     url: "/growth-radar",
-    title: "Pre-Tender Lead Generation India — GrowthRadar | BranDigiOps",
+    title: "Pre-Tender Lead Generation Global — GrowthRadar | BranDigiOps",
     description:
-      "Pre-tender lead generation for Indian businesses — PEB, government IT tenders, insurance prospects and custom sector intelligence before RFPs go live.",
+      "Pre-tender lead generation for Global businesses — PEB, government IT tenders, insurance prospects and custom sector intelligence before RFPs go live.",
   },
 };
 

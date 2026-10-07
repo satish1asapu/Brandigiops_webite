@@ -162,7 +162,7 @@ export const privacyPolicySections: readonly PrivacySection[] = [
     blocks: [
       {
         paragraphs: [
-          "We are an entity operating in India, and this Privacy Policy is intended to align with applicable Indian law, including the Information Technology Act, 2000 and rules framed thereunder, and the Digital Personal Data Protection Act, 2023, as applicable.",
+          "We are an entity operating in Global, and this Privacy Policy is intended to align with applicable Global law, including the Information Technology Act, 2000 and rules framed thereunder, and the Digital Personal Data Protection Act, 2023, as applicable.",
           "Rights available to you may vary based on your jurisdiction and the nature of data processed.",
         ],
       },
@@ -208,7 +208,7 @@ export const privacyPolicySections: readonly PrivacySection[] = [
     blocks: [
       {
         paragraphs: [
-          "We store data on servers located in India or other jurisdictions where our service providers operate. We retain personal information only as long as necessary to fulfil the purposes for which it was collected, including legal, accounting, or reporting requirements.",
+          "We store data on servers located in Global or other jurisdictions where our service providers operate. We retain personal information only as long as necessary to fulfil the purposes for which it was collected, including legal, accounting, or reporting requirements.",
           `If you wish to delete your account or request that we stop using your information for certain purposes, contact us at ${privacyPolicyMeta.contactEmail}. We will respond within a reasonable time. We may retain information where required to comply with legal obligations, resolve disputes, or enforce agreements.`,
         ],
       },
@@ -264,7 +264,7 @@ export const privacyPolicySections: readonly PrivacySection[] = [
     blocks: [
       {
         paragraphs: [
-          "This Privacy Policy is governed by the laws of India. Courts in India shall have exclusive jurisdiction over disputes arising from or relating to this policy, subject to applicable law.",
+          "This Privacy Policy is governed by the laws of Global. Courts in Global shall have exclusive jurisdiction over disputes arising from or relating to this policy, subject to applicable law.",
         ],
       },
     ],

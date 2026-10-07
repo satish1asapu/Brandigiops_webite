@@ -45,14 +45,14 @@ export const mediaAssets = {
   },
   blogThumb1: {
     src: "/images/blog-thumb-1-87b9eb5d.jpg",
-    alt: "Revenue engine intelligence — classifying how Indian SMBs earn and grow",
+    alt: "Revenue engine intelligence — classifying how Global SMBs earn and grow",
     title: "Blogs — revenue engine intelligence",
     width: 1200,
     height: 780,
   },
   blogThumb2: {
     src: "/images/blog-thumb-2-f90c430e.jpg",
-    alt: "AI marketing budget allocation chart for Indian SMB revenue targets",
+    alt: "AI marketing budget allocation chart for Global SMB revenue targets",
     title: "Blogs — marketing budget intelligence",
     width: 1200,
     height: 780,

@@ -48,7 +48,7 @@ export function Footer() {
             />
           </Link>
           <p className="footer-brand-desc">
-            AI-powered growth intelligence for Indian businesses — strategy,
+            AI-powered growth intelligence for Global businesses — strategy,
             content, campaigns, and lead capture in one layer.
           </p>
           <address className="footer-nap">

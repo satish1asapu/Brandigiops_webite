@@ -2,7 +2,7 @@ export const growthRadar = {
   badge: "AI Intelligence Suite",
   title: "GrowthRadar",
   keywordLine:
-    "Pre-tender and signal-stage lead intelligence for Indian businesses",
+    "Pre-tender and signal-stage lead intelligence for Global businesses",
   subtitle: "Sector-specific AI intelligence engines that surface the right prospect, at the right moment, before they go to market.",
   description: "Each Radar continuously reads public regulatory filings, procurement portals, and market signals — resolves them into scored, actionable leads — and delivers a ranked 'reach out now' list to your team.",
 
@@ -30,22 +30,22 @@ export const growthRadar = {
       shortName: "Hardware Radar",
       tagline: "Government IT procurement intelligence for OEMs and resellers",
       summary: "Monitors central and state government e-procurement portals for IT hardware tenders that match your capacity — so you bid on the right ones before deadlines close.",
-      promise: "Scored open-tender list with Make-in-India compliance flags, value-band classification, and amendment alerts — every week.",
+      promise: "Scored open-tender list with Make-in-Global compliance flags, value-band classification, and amendment alerts — every week.",
       deliverables: [
         "Scored tender list from central and state government procurement portals",
-        "Make-in-India preference class compliance check per bid",
+        "Make-in-Global preference class compliance check per bid",
         "Value-band filtering across small, mid, and large contracts",
         "MSME eligibility flags and corrigendum tracking"
       ],
       pricing: "₹50,000 / mo",
-      pricingNote: "All-India or state-specific plans available",
+      pricingNote: "All-Global or state-specific plans available",
       accent: "#22d3ee"
     },
     {
       id: "smb-radar",
-      name: "SMB Radar — small business growth signals across India",
+      name: "SMB Radar — small business growth signals across Global",
       shortName: "SMB Radar",
-      tagline: "AI market intelligence and lead generation for Indian SMBs",
+      tagline: "AI market intelligence and lead generation for Global SMBs",
       summary: "Aggregates buying signals from tender portals, company registries, business directories, and social channels into qualified leads your sales team can act on today.",
       promise: "Deduplicated lead list by company and region, with matched keywords, signal type, and contact enrichment — ready for outreach.",
       deliverables: [

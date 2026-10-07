@@ -7,16 +7,16 @@ import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
 import { siteConfig, siteUrl } from "@/content/seo";
 
 export const metadata: Metadata = {
-  title: "Free AEO Audit — AI Visibility Check India",
+  title: "Free AEO Audit — AI Visibility Check Global",
   description:
-    "Request a free AEO audit for your Indian business website — see how ChatGPT, Perplexity and AI Overviews see you today.",
+    "Request a free AEO audit for your Global business website — see how ChatGPT, Perplexity and AI Overviews see you today.",
   alternates: { canonical: "/free-aeo-audit" },
   openGraph: {
     type: "website",
     url: "/free-aeo-audit",
-    title: "Free AEO Audit — AI Visibility Check India | BranDigiOps",
+    title: "Free AEO Audit — AI Visibility Check Global | BranDigiOps",
     description:
-      "Request a free AEO audit for your Indian business website — see how ChatGPT, Perplexity and AI Overviews see you today.",
+      "Request a free AEO audit for your Global business website — see how ChatGPT, Perplexity and AI Overviews see you today.",
   },
 };
 
@@ -53,7 +53,7 @@ export default function FreeAeoAuditPage() {
       <main>
         <section className="section page-hero">
           <div className="section-label">Free offer</div>
-          <h1 className="section-title">Free AEO audit for Indian businesses</h1>
+          <h1 className="section-title">Free AEO audit for Global businesses</h1>
           <p className="section-subtitle">
             Send your website URL and WhatsApp number. We run a short AI-visibility
             snapshot and show where answer engines mention — or miss — your brand.

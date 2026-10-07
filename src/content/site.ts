@@ -28,12 +28,12 @@ export const navigation = [
 export const hero = {
   badge: "Growth Intelligence Suite",
   titleLine1: "AI-powered growth intelligence,",
-  titleLine2: "built for Indian businesses.",
+  titleLine2: "built for Global businesses.",
   titleAccent: "",
   keywordLine:
-    "An AI-first digital marketing agency for Indian SMBs — strategy, content, campaigns and lead generation in one platform.",
+    "An AI-first digital marketing agency for Global SMBs — strategy, content, campaigns and lead generation in one platform.",
   description:
-    "Grow instantly. Sustain with branding consistency, digital presence, and humanized content — at scale and speed. BranDigiOps combines AI automation with human expertise to give Indian businesses a growth engine that never sleeps.",
+    "Grow instantly. Sustain with branding consistency, digital presence, and humanized content — at scale and speed. BranDigiOps combines AI automation with human expertise to give Global businesses a growth engine that never sleeps.",
   ctaLabel: "Book a 20-minute walkthrough",
   ctaHref: "#contact",
   ctaSecondaryLabel: "See how it works",
@@ -71,7 +71,7 @@ export const about = {
   vision: {
     heading: "Our Vision",
     body:
-      "We want growth to feel less like guesswork and more like operations you can see and improve. A future where an SMB owner in Bengaluru has the same calibre of growth intelligence that enterprise teams pay lakhs for — priced and packaged for how Indian businesses actually run.",
+      "We want growth to feel less like guesswork and more like operations you can see and improve. A future where an SMB owner in Bengaluru has the same calibre of growth intelligence that enterprise teams pay lakhs for — priced and packaged for how Global businesses actually run.",
   },
 };
 
